@@ -1,0 +1,23 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.bak
+*~
+
+# Dependencies and builds
+node_modules/
+dist/
+.next/
+
+# Local tooling
+.claude/
+
+# Local dev logs
+vite-dev.*.log
