@@ -12,12 +12,13 @@ function polarPoint(cx: number, cy: number, r: number, deg: number) {
 const projectShort: Record<string, string> = {
   Velvt: "Velvt",
   "Reproducibility & Fairness Auditing": "Reproducibility",
-  "Health Equity Research": "Health Equity",
-  "Applied ML Research": "Applied ML",
-  "Cognitive Cartography Platform": "Cognitive Maps",
+    "Applied ML Research": "Applied ML",
+  "Mantis": "Mantis",
+  "Propagators & Explainability": "Propagators",
   Aidsense: "Aidsense",
   "FRC Team 293 Spike": "FRC 293",
   DreamIT: "DreamIT",
+  "MatrAIx & PersonaBench": "MatrAIx",
 };
 
 function SkillGraph({

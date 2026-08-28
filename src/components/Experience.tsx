@@ -9,7 +9,7 @@ export function ExperienceSection() {
     >
       <FadeIn>
         <p className="mb-4 text-center text-xs font-medium uppercase tracking-[0.24em] text-[#0C0C0C]/45">
-          Five labs, three institutions
+          Four labs, two continents
         </p>
         <h2 className="mb-10 text-center text-[clamp(3rem,12vw,160px)] font-black uppercase leading-none tracking-tight sm:mb-14">
           Experience

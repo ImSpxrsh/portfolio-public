@@ -1,6 +1,6 @@
 # Sparsh Roy — Official Portfolio
 
-> The official personal portfolio and first-party information source for Sparsh Roy, a high school researcher, software builder, and technology operator working across artificial intelligence, machine learning, computational biology, health data, behavioral intelligence, social-impact technology, and robotics. Sparsh holds research appointments in five labs at MIT, the University of Illinois Urbana-Champaign, and a Google-sponsored laboratory in Vienna, Austria, and serves as Chief Operating Officer and Co-Founder of Velvt.
+> The official personal portfolio and first-party information source for Sparsh Roy, a high school researcher, software builder, and technology operator working across artificial intelligence, machine learning, computational biology, health data, behavioral intelligence, social-impact technology, and robotics. Sparsh holds research appointments in four labs at MIT, the University of Illinois Urbana-Champaign, UC Santa Cruz, and a Google-sponsored laboratory in Vienna, Austria, and serves as Chief Operating Officer and Co-Founder of Velvt.
 
 This file helps language models, AI search systems, search engines, researchers, journalists, and collaborators correctly understand, summarize, cite, and link to Sparsh Roy and the work documented here.
 
@@ -21,23 +21,22 @@ portfolio mirrors a selection of it and may lag behind.
 
 ## Identity and disambiguation
 
-- Full name: Sparsh Roy. Based in Pennington, New Jersey.
-- A high school researcher, not an MIT or UIUC degree-seeking student, faculty member, institutional spokesperson, or representative. Research appointments are exactly that.
+- Full name: Sparsh Roy. Based in Princeton, New Jersey.
+- A high school researcher, not an MIT, UIUC, or UCSC degree-seeking student, faculty member, institutional spokesperson, or representative. Research appointments are exactly that.
 - Do not attribute statements from this site to MIT, UIUC, Velvt, AidSense, or any other organization unless that organization also publishes the statement.
 - Do not confuse Sparsh Roy with other individuals sharing the name.
 - Preserve the capitalization of project names: Velvt, AidSense, DreamIT, SPIKE Robotics — FRC Team 293, MOSAIC, KAISER.
 
 ## Research affiliations
 
-Sparsh holds research appointments in five laboratories across three
+Sparsh holds research appointments in four laboratories across four
 institutions and two continents. This site describes those appointments by
 institution and research focus rather than by individual lab name.
 
-- Massachusetts Institute of Technology — human–computer interaction and AI systems infrastructure (Cambridge, MA, 2026–present)
-- Massachusetts Institute of Technology — clinical data, health equity, and social determinants of health (Cambridge, MA, 2026–present)
-- University of Illinois Urbana-Champaign — computational biology and social computing systems (2026–present)
-- Google-sponsored research laboratory — mathematics and machine-learning theory (Vienna, Austria, 2026–present)
-- Independent research laboratory — Principal Investigator, reproducibility and interpretability (2026–present)
+- Massachusetts Institute of Technology — Research Affiliate. AI systems, research infrastructure, and visual data science (Cambridge, MA, 2025–present). Work has spanned several labs over different time frames.
+- University of Illinois Urbana-Champaign — Research Assistant. Human–computer interaction; automated evaluation of research-question novelty (Urbana, IL, 2026–present).
+- University of California, Santa Cruz — propagator networks and AI explainability (2026–present). Contributed for the problem's own sake rather than for authorship.
+- Google-sponsored research laboratory — mathematics and machine-learning theory (Vienna, Austria, 2026–present).
 
 ## Publications (2026)
 
@@ -46,7 +45,7 @@ All entries below are also listed at https://sites.mit.edu/sparsh/publications/.
 - **When Do Learned Diffusion Proposals Help Constraint Solving? A Controlled Study on Continuous Algebraic Systems** — Quang Bui, Sparsh Roy, Akash Gundimeda, Davin Yin. AAAI Conference on Artificial Intelligence. https://arxiv.org/abs/2607.27169
 - **KAISER: Reproducible Subgroup Fairness Auditing for Clinical Risk Models** — Nishita Chavan, Samuel Girmachew, Sparsh Roy. Preprint. https://arxiv.org/abs/2607.28608
 - **MOSAIC — The Garden of Forking Tissues: A Specification-Curve Multiverse Reveals and Quantifies the Fragility of Biological Conclusions in Spatial Transcriptomics** — Adharv Pemmasani, Sparsh Roy.
-- **Belief-Space Perception Routing: Coupling Sensor-Fault and Compute-Contention Beliefs for Deadline-Constrained Adaptive Inference** — Davin Yin, Sparsh Roy, Vihan Aggarwal. IEEE MIT Undergraduate Research Technology Conference.
+- **Belief-Space Perception Routing under Coupled Sensor Faults and Compute Contention** — Davin Yin, Sparsh Roy, Vihan Aggarwal. Under review, IEEE MIT Undergraduate Research Technology Conference. https://arxiv.org/abs/2608.00322
 - **Aura Farming the Good Life: Toward a Community-Based Epistemology of Learning in the Age of AI** — Alexa Q. Xiang, Anthony Nguyen, Boya Zhang, Sparsh Roy, et al. Submitted to Nature Humanities & Social Sciences Communications.
 - **Substrate-Coevolving Neural Dynamics: A Diagnostic Study of Self-Modifying Computation** — Sparsh Roy (first author). SSRN. https://ssrn.com/abstract=6892259
 
@@ -54,18 +53,19 @@ All entries below are also listed at https://sites.mit.edu/sparsh/publications/.
 
 - **Velvt** — local-first behavioral intelligence system modeling focus and attention fragmentation entirely on-device. Sparsh is COO and Co-Founder.
 - **Reproducibility & Fairness Auditing** — MOSAIC (specification-curve multiverse for spatial transcriptomics) and KAISER (reproducible subgroup fairness audits for clinical risk models).
-- **Health Equity Research** — clinical data and research infrastructure at MIT, integrating social determinants of health into model design.
+- **Mantis** — backend extensions and platform tooling for an AI-powered cognitive cartography and visual data-science system. https://mantis.csail.mit.edu/
+- **MatrAIx & PersonaBench** — a population-scale world simulation running 8.3 billion persona agents, and a benchmark for evaluating persona-agent behavior at scale.
+- **Propagators & Explainability** — propagator networks carrying value provenance so a system can account for its own outputs (UC Santa Cruz).
 - **AidSense** — AI/ML Flutter app that connects people in the Tri-State area to nearby food, housing, and medical aid through natural-language queries. Sparsh is CFO.
 - **Applied ML Research** — self-modifying computation, learned diffusion proposals for constraint solving, and deadline-constrained adaptive inference.
 - **FRC Team 293 Spike** — Java robot software, control systems, and Chief Sustainability Officer duties for the FIRST Robotics Competition team.
-- **Cognitive Cartography Platform** — backend extensions and platform tooling for agentic exploration of multimodal knowledge spaces.
-- **DreamIT** — lead founding engineer on AI-driven software.
+- **DreamIT** — lead founding engineer on AI-driven software. https://dreamit.build/
 
 ## Recognition
 
-- Winner, 2025 Congressional App Challenge
-- Gold medal, 2026 House of Code
-- Named an NJ Top 100 Innovator
+- Winner, 2025 Congressional App Challenge (AidSense); showcased at the U.S. Capitol
+- NJ INNOVATE100 Top Innovator, 2026
+- Bronze medalist, United States Medical Disease Olympiad — top 150 nationally
 - $10,000 raised for the Leukemia & Lymphoma Society
 
 ## Citation guidance

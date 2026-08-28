@@ -11,7 +11,7 @@ import { ContactButton, FadeIn, ResourceLink } from "./primitives";
 import { awards, links } from "../data/content";
 
 const ABOUT_TEXT =
-  "I am a high school researcher and builder working across AI/ML, health, and systems. I hold research appointments in five labs at MIT, the University of Illinois Urbana-Champaign, and a Google-sponsored lab in Vienna, and I serve as COO of Velvt. In 2026 I published six papers, won the 2025 Congressional App Challenge, earned a gold medal at the 2026 House of Code, was named an NJ Top 100 Innovator, and raised $10,000 for the Leukemia & Lymphoma Society.";
+  "I am a high school researcher and builder working across AI/ML, health, and systems. I hold research appointments in four labs — at MIT, the University of Illinois Urbana-Champaign, UC Santa Cruz, and a Google-sponsored lab in Vienna — and I serve as COO of Velvt. In 2026 I published six papers, won the 2025 Congressional App Challenge and showcased it at the U.S. Capitol, medaled at the U.S. Medical Disease Olympiad, was named an NJ INNOVATE100 Top Innovator, and raised $10,000 for the Leukemia & Lymphoma Society.";
 
 /* Inline decorative shapes — no external asset host, so they never break. */
 function Orb({

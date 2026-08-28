@@ -16,8 +16,8 @@ export const SITE_URL = "https://sparshr.scripts.mit.edu";
 export const profile = {
   name: "Sparsh Roy",
   tagline: "Researcher & Builder",
-  role: "Research across multiple labs at MIT and UIUC, and COO of Velvt",
-  location: "Pennington, New Jersey",
+  role: "Research across multiple labs at MIT, UIUC, and UCSC, and COO of Velvt",
+  location: "Princeton, New Jersey",
   portrait: "/avatar.png",
   resume: "/Sparsh_Roy_Resume.pdf",
 } as const;
@@ -32,6 +32,8 @@ export const links = {
   courses: "https://sites.mit.edu/sparsh/courses/",
   blog: "https://sites.mit.edu/sparsh/blog/",
   latestPaper: "https://arxiv.org/abs/2607.27169",
+  mantis: "https://mantis.csail.mit.edu/",
+  dreamit: "https://dreamit.build/",
 } as const;
 
 /* -------------------------------------------------------------------------- */
@@ -48,20 +50,20 @@ export type Affiliation = {
 export const affiliations: Affiliation[] = [
   {
     institution: "Massachusetts Institute of Technology",
-    focus: "Human–computer interaction and AI systems infrastructure",
-    place: "Cambridge, MA",
-    since: "2026",
-  },
-  {
-    institution: "Massachusetts Institute of Technology",
-    focus: "Clinical data, health equity, and social determinants of health",
+    focus: "AI systems, research infrastructure, and visual data science",
     place: "Cambridge, MA",
     since: "2026",
   },
   {
     institution: "University of Illinois Urbana-Champaign",
-    focus: "Computational biology and social computing systems",
+    focus: "Human–computer interaction",
     place: "Urbana, IL",
+    since: "2026",
+  },
+  {
+    institution: "University of California, Santa Cruz",
+    focus: "Propagator networks and AI explainability",
+    place: "Santa Cruz, CA",
     since: "2026",
   },
   {
@@ -70,16 +72,10 @@ export const affiliations: Affiliation[] = [
     place: "Vienna, Austria",
     since: "2026",
   },
-  {
-    institution: "Independent research laboratory",
-    focus: "Principal investigator — reproducibility and interpretability",
-    place: "Remote",
-    since: "2026",
-  },
 ];
 
 export const affiliationSummary =
-  "I hold research appointments in five labs across MIT, the University of Illinois Urbana-Champaign, and a Google-sponsored laboratory in Vienna.";
+  "I hold research appointments in four labs — at MIT, the University of Illinois Urbana-Champaign, UC Santa Cruz, and a Google-sponsored laboratory in Vienna.";
 
 /* -------------------------------------------------------------------------- */
 /*  Publications — canonical home is the MIT site                               */
@@ -101,7 +97,7 @@ export const publications: Publication[] = [
     title:
       "When Do Learned Diffusion Proposals Help Constraint Solving? A Controlled Study on Continuous Algebraic Systems",
     authors: ["Quang Bui", "Sparsh Roy", "Akash Gundimeda", "Davin Yin"],
-    venue: "AAAI Conference on Artificial Intelligence",
+    venue: "Under review, AAAI Conference on Artificial Intelligence",
     year: "2026",
     kind: "Conference",
     summary:
@@ -131,14 +127,14 @@ export const publications: Publication[] = [
   },
   {
     title:
-      "Belief-Space Perception Routing: Coupling Sensor-Fault and Compute-Contention Beliefs for Deadline-Constrained Adaptive Inference",
+      "Belief-Space Perception Routing under Coupled Sensor Faults and Compute Contention",
     authors: ["Davin Yin", "Sparsh Roy", "Vihan Aggarwal"],
-    venue: "IEEE MIT Undergraduate Research Technology Conference",
+    venue: "Under review, IEEE MIT Undergraduate Research Technology Conference",
     year: "2026",
     kind: "Conference",
     summary:
-      "Adaptive inference that tracks sensor-fault and compute-contention beliefs jointly, routing perception work to hit hard deadlines under degraded hardware.",
-    href: links.publications,
+      "Models perception routing under belief uncertainty where sensor faults and compute contention are coupled rather than independent, so inference still lands inside its deadline.",
+    href: "https://arxiv.org/abs/2608.00322",
   },
   {
     title:
@@ -171,15 +167,21 @@ export const publications: Publication[] = [
 /* -------------------------------------------------------------------------- */
 
 export const awards = [
-  { label: "Congressional App Challenge", detail: "Winner, 2025" },
-  { label: "House of Code", detail: "Gold medal, 2026" },
-  { label: "NJ Top 100 Innovator", detail: "Named 2026" },
+  {
+    label: "Congressional App Challenge",
+    detail: "Winner 2025 · showcased at the U.S. Capitol",
+  },
+  { label: "NJ INNOVATE100", detail: "Top Innovator, 2026" },
+  {
+    label: "U.S. Medical Disease Olympiad",
+    detail: "Bronze medalist · top 150 nationally",
+  },
   { label: "Leukemia & Lymphoma Society", detail: "$10,000 raised" },
 ] as const;
 
 export const stats = [
   { value: "6", label: "Papers in 2026" },
-  { value: "5", label: "Research labs" },
+  { value: "4", label: "Research labs" },
   { value: "3", label: "Ventures co-founded" },
   { value: "2", label: "Continents" },
 ] as const;
@@ -209,7 +211,7 @@ export const skillMap: readonly Skill[] = [
     description:
       "Applied machine-learning research: diffusion proposals for constraint solving, self-modifying neural dynamics, agentic LLM workflows, and multimodal pipelines.",
     tools: ["Python", "PyTorch", "LLM APIs", "Diffusion Models", "ML Pipelines"],
-    projects: ["Applied ML Research", "Cognitive Cartography Platform", "Velvt"],
+    projects: ["Applied ML Research", "Mantis", "Velvt"],
   },
   {
     id: "research",
@@ -218,11 +220,11 @@ export const skillMap: readonly Skill[] = [
     icon: BarChart3,
     accent: "#27C4A8",
     description:
-      "Research across five labs — reproducibility, fairness auditing, computational biology, and the epistemology of learning under AI.",
+      "Research across four labs — reproducibility, fairness auditing, explainability, and the epistemology of learning under AI.",
     tools: ["Reproducibility", "Fairness Auditing", "Spatial Omics", "arXiv", "SSRN"],
     projects: [
       "Reproducibility & Fairness Auditing",
-      "Health Equity Research",
+      "Propagators & Explainability",
       "Applied ML Research",
     ],
   },
@@ -235,7 +237,7 @@ export const skillMap: readonly Skill[] = [
     description:
       "Backend extensions, APIs, and platform tooling that power agentic data exploration and the infrastructure research actually runs on.",
     tools: ["Python", "FastAPI", "REST APIs", "Firebase", "Data Infra"],
-    projects: ["Cognitive Cartography Platform", "Aidsense"],
+    projects: ["Mantis", "Aidsense"],
   },
   {
     id: "product",
@@ -320,46 +322,26 @@ export const projects: readonly Project[] = [
   },
   {
     number: "03",
-    category: "Health AI",
-    name: "Health Equity Research",
+    category: "Research",
+    name: "Mantis",
     description:
-      "Clinical data, health equity, and research-infrastructure work at MIT — building AI systems that take social determinants of health as a first-class input rather than an afterthought.",
-    tags: ["Health Equity", "Clinical AI", "SDOH", "Research Infra"],
+      "Backend extensions and platform tooling for an AI-powered cognitive cartography and visual data-science system, powering agentic exploration across multimodal knowledge spaces.",
+    tags: ["LLM Agents", "Python", "Backend", "Research"],
     details: [
-      "Develops and maintains research infrastructure across ongoing clinical data projects.",
-      "Integrates social determinants of health into model design instead of bolting them on downstream.",
-      "Supports the seminar programming that puts the work in front of clinicians, not just modelers.",
+      "Builds the backend that lets LLM agents traverse and annotate multimodal knowledge spaces.",
+      "Focuses on the infrastructure layer: APIs, extensions, and reproducible tooling.",
+      "Turns exploratory analysis into a navigable map rather than a pile of notebooks.",
     ],
-    link: links.publications,
+    link: links.mantis,
     metrics: [
-      { label: "Health equity focus", value: 88 },
-      { label: "Clinical data work", value: 80 },
-      { label: "Research infra", value: 84 },
+      { label: "Agentic exploration", value: 90 },
+      { label: "Backend tooling", value: 86 },
+      { label: "Multimodal coverage", value: 82 },
     ],
-    flow: ["Clinical Data", "Build Infra", "Advance Equity"],
+    flow: ["Ingest Knowledge", "Run LLM Agents", "Map & Explore"],
   },
   {
     number: "04",
-    category: "Social Impact",
-    name: "Aidsense",
-    description:
-      "An AI/ML-powered Flutter app that helps people in the Tri-State area find nearby food, housing, and medical aid through plain-language questions.",
-    tags: ["Flutter", "Dart", "AI/ML", "SDOH"],
-    details: [
-      "Built end-to-end, including backend infrastructure and ML integration.",
-      "Turns natural-language queries into matched, nearby aid resources.",
-      "Serves as CFO alongside the engineering work.",
-    ],
-    link: "https://aidsense.app/",
-    metrics: [
-      { label: "Natural-language search", value: 89 },
-      { label: "Aid coverage", value: 84 },
-      { label: "ML integration", value: 78 },
-    ],
-    flow: ["Parse Query", "Match Resources", "Connect Aid"],
-  },
-  {
-    number: "05",
     category: "AI/ML Research",
     name: "Applied ML Research",
     description:
@@ -377,6 +359,26 @@ export const projects: readonly Project[] = [
       { label: "Published 2026", value: 92 },
     ],
     flow: ["Define Substrate", "Coevolve State", "Diagnose Dynamics"],
+  },
+  {
+    number: "05",
+    category: "Social Impact",
+    name: "Aidsense",
+    description:
+      "An AI/ML-powered Flutter app that helps people in the Tri-State area find nearby food, housing, and medical aid through plain-language questions.",
+    tags: ["Flutter", "Dart", "AI/ML", "Social Good"],
+    details: [
+      "Built end-to-end, including backend infrastructure and ML integration.",
+      "Turns natural-language queries into matched, nearby aid resources.",
+      "Serves as CFO alongside the engineering work.",
+    ],
+    link: "https://aidsense.app/",
+    metrics: [
+      { label: "Natural-language search", value: 89 },
+      { label: "Aid coverage", value: 84 },
+      { label: "ML integration", value: 78 },
+    ],
+    flow: ["Parse Query", "Match Resources", "Connect Aid"],
   },
   {
     number: "06",
@@ -401,21 +403,40 @@ export const projects: readonly Project[] = [
   {
     number: "07",
     category: "Research",
-    name: "Cognitive Cartography Platform",
+    name: "Propagators & Explainability",
     description:
-      "Backend extensions and platform tooling for an AI-powered cognitive cartography and visual data-science system, powering agentic exploration across multimodal knowledge spaces.",
-    tags: ["LLM Agents", "Python", "Backend", "Research"],
+      "Work on propagator networks and AI explainability at UC Santa Cruz — using propagation to carry the provenance of a value alongside the value itself, so a model's output can explain where it came from.",
+    tags: ["Propagators", "Explainability", "Interpretability"],
     details: [
-      "Builds the backend that lets LLM agents traverse and annotate multimodal knowledge spaces.",
-      "Focuses on the infrastructure layer: APIs, extensions, and reproducible tooling.",
+      "Explores propagator networks as a substrate for explanations that are computed, not reconstructed after the fact.",
+      "Contributed for the problem's own sake rather than for authorship.",
+    ],
+    link: "https://www.ucsc.edu/",
+    metrics: [
+      { label: "Provenance tracking", value: 88 },
+      { label: "Explanation fidelity", value: 83 },
+      { label: "Exploratory", value: 76 },
+    ],
+    flow: ["Propagate Values", "Carry Provenance", "Explain Output"],
+  },
+  {
+    number: "09",
+    category: "Simulation",
+    name: "MatrAIx & PersonaBench",
+    description:
+      "A population-scale world simulation running 8.3 billion persona agents, plus PersonaBench — a benchmark for evaluating persona-agent behavior at that scale.",
+    tags: ["Agent Simulation", "Benchmarks", "Scale"],
+    details: [
+      "Contributes to the simulation and to the benchmark that measures whether its agents behave coherently at scale.",
+      "Supported promotion for a release that reached viral distribution.",
     ],
     link: links.mitSite,
     metrics: [
-      { label: "Agentic exploration", value: 90 },
-      { label: "Backend tooling", value: 86 },
-      { label: "Multimodal coverage", value: 82 },
+      { label: "Agents simulated", value: 96 },
+      { label: "Benchmark coverage", value: 81 },
+      { label: "Release reach", value: 89 },
     ],
-    flow: ["Ingest Knowledge", "Run LLM Agents", "Map & Explore"],
+    flow: ["Spawn Personas", "Simulate World", "Benchmark Behavior"],
   },
   {
     number: "08",
@@ -428,7 +449,7 @@ export const projects: readonly Project[] = [
       "Drives development across frontend and backend as lead founding engineer.",
       "Collaborates with founders on product strategy and delivery.",
     ],
-    link: "https://github.com/ImSpxrsh",
+    link: links.dreamit,
     metrics: [
       { label: "Full-stack delivery", value: 87 },
       { label: "Product velocity", value: 82 },
@@ -441,7 +462,9 @@ export const projects: readonly Project[] = [
 export const featuredProjects = projects.filter((p) =>
   ["01", "02", "03", "04", "05", "06"].includes(p.number),
 );
-export const moreProjects = projects.filter((p) => ["07", "08"].includes(p.number));
+export const moreProjects = projects.filter((p) =>
+  ["07", "08", "09"].includes(p.number),
+);
 
 /* -------------------------------------------------------------------------- */
 /*  Experience                                                                  */
@@ -462,19 +485,9 @@ export const experience: readonly ExperienceOrg[] = [
     location: "Cambridge, Massachusetts",
     roles: [
       {
-        title: "Social Determinants of Health Researcher",
+        title: "Research Affiliate",
         period: "May 2026 — Present",
-        body: "Building AI systems for healthcare that treat social determinants of health as a first-class modeling input.",
-      },
-      {
-        title: "AI/ML Developer",
-        period: "May 2026 — Present",
-        body: "Software infrastructure and machine learning for an AI-powered cognitive cartography and visual data-science platform.",
-      },
-      {
-        title: "Research Assistant",
-        period: "May 2026 — Present",
-        body: "On a faculty-led seminar series reframing the AI-accelerated crisis in education and academic research as a philosophical one, and proposing a model built on genuine, purposeful learning and collaborative knowledge-making over the prestige economy.",
+        body: "Software infrastructure and machine learning for an AI-powered cognitive cartography and visual data-science platform, plus research support on a faculty-led seminar series reframing the AI-accelerated crisis in education and academic research as a philosophical one — arguing for genuine, purposeful learning and collaborative knowledge-making over the prestige economy.",
       },
     ],
   },
@@ -484,9 +497,21 @@ export const experience: readonly ExperienceOrg[] = [
     location: "Urbana, Illinois · Remote",
     roles: [
       {
+        title: "Research Assistant",
+        period: "2026 — Present",
+        body: "Human–computer interaction research, spanning interaction design, privacy, and human-centered systems.",
+      },
+    ],
+  },
+  {
+    org: "University of California, Santa Cruz",
+    meta: "Research · 2026 — Present",
+    location: "Santa Cruz, California · Remote",
+    roles: [
+      {
         title: "Researcher",
         period: "2026 — Present",
-        body: "Computational biology and social computing systems research, spanning privacy, human-centered systems, and biological data analysis.",
+        body: "Work on propagator networks and AI explainability — using propagation to carry the provenance of a value alongside the value itself, so a system can account for how it reached an output instead of having an explanation reconstructed afterward. Contributed for the problem's own sake rather than for authorship.",
       },
     ],
   },
@@ -499,17 +524,6 @@ export const experience: readonly ExperienceOrg[] = [
         title: "Researcher",
         period: "Jun 2026 — Present",
         body: "Investigative and scholarly research across mathematics and machine learning.",
-      },
-    ],
-  },
-  {
-    org: "Independent Research Laboratory",
-    meta: "Research",
-    roles: [
-      {
-        title: "Principal Investigator",
-        period: "May 2026 — Present",
-        body: "Setting research direction on reproducibility and interpretability, and leading the collaborators who execute it.",
       },
     ],
   },
