@@ -12,6 +12,9 @@
 
 html {
   scroll-behavior: smooth;
+  /* Keep anchored sections clear of the fixed header. */
+  scroll-padding-top: 5rem;
+  -webkit-text-size-adjust: 100%;
 }
 
 html,
@@ -19,11 +22,13 @@ body,
 #root {
   min-height: 100%;
   background: #0c0c0c;
-  font-family: "Kanit", sans-serif;
+  font-family: "Kanit", system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 
 body {
   color: #d7e2ea;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 img {
@@ -43,6 +48,13 @@ a {
   -webkit-text-fill-color: transparent;
 }
 
+.btn-primary {
+  background: linear-gradient(123deg, #2a0a12 6%, #ec4899 42%, #f97316 100%);
+  box-shadow:
+    0 4px 4px rgba(236, 72, 153, 0.25),
+    4px 4px 12px #f97316 inset;
+}
+
 .project-sticky-card {
   --project-sticky-top: 6rem;
 }
@@ -51,6 +63,64 @@ a {
   .project-sticky-card {
     --project-sticky-top: 8rem;
   }
+}
+
+/* Visible keyboard focus everywhere, without a mouse-click ring. */
+.focus-ring:focus-visible,
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #f472b6;
+  outline-offset: 3px;
+  border-radius: 9999px;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 100;
+  padding: 0.75rem 1.25rem;
+  background: #d7e2ea;
+  color: #0c0c0c;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-radius: 0 0 1rem 0;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
+::selection {
+  background: rgba(236, 72, 153, 0.35);
+  color: #ffffff;
+}
+
+/* Thin, on-brand scrollbar on the platforms that honour it. */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(215, 226, 234, 0.25) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0c0c0c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(215, 226, 234, 0.22);
+  border-radius: 9999px;
+  border: 2px solid #0c0c0c;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(215, 226, 234, 0.4);
 }
 
 @media (prefers-reduced-motion: reduce) {

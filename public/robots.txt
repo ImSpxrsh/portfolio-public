@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sparshr.scripts.mit.edu/sitemap.xml
