@@ -201,8 +201,8 @@ export const timeline: readonly TimelineItem[] = [
 /* -------------------------------------------------------------------------- */
 
 export const navItems = [
-  { label: "hi", href: "#about" },
+  { label: "about", href: "#about" },
   { label: "toolbox", href: "#toolbox" },
-  { label: "stuff I made", href: "#projects" },
   { label: "timeline", href: "#timeline" },
+  { label: "workshop", href: "#projects" },
 ] as const;

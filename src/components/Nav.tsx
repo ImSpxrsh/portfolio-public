@@ -13,9 +13,9 @@ export function Nav() {
   }, [open]);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-40 px-4 pt-3 sm:px-6">
-      <div className="sticker mx-auto flex max-w-5xl items-center justify-between gap-4 bg-paper/95 px-4 py-2 backdrop-blur">
-        <a href="#top" className="text-lg font-extrabold tracking-tight">
+    <header className="fixed inset-x-0 top-0 z-40 px-4 pt-4 sm:px-6">
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4">
+        <a href="#top" className="text-lg font-extrabold tracking-tight text-white">
           sparsh<span className="text-pink">.</span>
         </a>
 
@@ -24,13 +24,13 @@ export function Nav() {
             <a
               key={item.href}
               href={item.href}
-              className="rounded-full px-3 py-1.5 font-semibold transition hover:-rotate-2 hover:bg-yellow"
+              className="rounded-full px-3 py-1.5 font-semibold text-white/75 transition hover:bg-white/10 hover:text-white"
             >
               {item.label}
             </a>
           ))}
-          <a href={links.email} className="btn ml-2 bg-pink px-4 py-1.5">
-            say hi ✉️
+          <a href={links.email} className="neon-btn ml-2 border-pink px-4 py-1.5 text-pink">
+            say hi
           </a>
         </nav>
 
@@ -39,23 +39,20 @@ export function Nav() {
           onClick={() => setOpen((v) => !v)}
           aria-expanded={open}
           aria-label={open ? "Close menu" : "Open menu"}
-          className="sticker flex h-10 w-10 items-center justify-center bg-yellow md:hidden"
+          className="flex h-10 w-10 items-center justify-center rounded-full border border-white/30 bg-black/30 text-white backdrop-blur md:hidden"
         >
           {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
         </button>
       </div>
 
       {open && (
-        <nav
-          className="sticker mx-auto mt-2 flex max-w-5xl flex-col bg-paper p-2 md:hidden"
-          aria-label="Mobile"
-        >
+        <nav className="glass mx-auto mt-3 flex max-w-6xl flex-col !p-2 md:hidden" aria-label="Mobile">
           {[...navItems, { label: "say hi ✉️", href: links.email }].map((item) => (
             <a
               key={item.href}
               href={item.href}
               onClick={() => setOpen(false)}
-              className="rounded-xl px-4 py-3 text-xl font-bold hover:bg-yellow"
+              className="rounded-xl px-4 py-3 text-xl font-bold text-white hover:bg-white/10"
             >
               {item.label}
             </a>

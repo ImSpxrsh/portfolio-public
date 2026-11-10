@@ -1,8 +1,6 @@
 import { Nav } from "./components/Nav";
-import { HeroSection, Marquee } from "./components/Hero";
-import { AboutSection, ToolboxSection } from "./components/About";
-import { ProjectsSection, TimelineSection } from "./components/Projects";
-import { Footer } from "./components/Footer";
+import { Story } from "./components/Story";
+import { Scene } from "./three/Scene";
 
 export default function App() {
   return (
@@ -10,16 +8,11 @@ export default function App() {
       <a href="#about" className="skip-link">
         Skip to content
       </a>
+      <Scene />
       <Nav />
-      <main className="overflow-x-clip">
-        <HeroSection />
-        <Marquee />
-        <AboutSection />
-        <ToolboxSection />
-        <ProjectsSection />
-        <TimelineSection />
+      <main className="relative overflow-x-clip">
+        <Story />
       </main>
-      <Footer />
     </>
   );
 }
