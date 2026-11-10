@@ -7,8 +7,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
-    "deploy": "./scripts/deploy-athena.sh",
-    "resume": "'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --headless --disable-gpu --print-to-pdf=public/Sparsh_Roy_Resume.pdf --no-pdf-header-footer resume/resume.html"
+    "deploy": "./scripts/deploy-athena.sh"
   },
   "dependencies": {
     "framer-motion": "^12.38.0",

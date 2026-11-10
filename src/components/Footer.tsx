@@ -1,85 +1,38 @@
 import { Github, Linkedin, Mail } from "lucide-react";
+import { Pop } from "./primitives";
 import { links } from "../data/content";
 
 export function Footer() {
-  const year = new Date().getFullYear();
-
   return (
-    <footer className="border-t border-[#D7E2EA]/10 bg-[#0C0C0C] px-5 py-12 sm:px-8 md:px-10">
-      <div className="mx-auto grid max-w-5xl gap-8 sm:grid-cols-[1.2fr_1fr]">
-        <div>
-          <p className="text-sm font-semibold uppercase tracking-wider text-[#D7E2EA]">
-            Sparsh Roy
+    <footer className="px-5 pb-10 pt-16">
+      <Pop className="mx-auto max-w-3xl">
+        <div className="sticker rotate-[0.6deg] bg-yellow p-8 text-center sm:p-12">
+          <p className="text-5xl">💌</p>
+          <h2 className="mt-3 text-[clamp(2rem,6vw,3.5rem)] font-extrabold leading-none">
+            wanna build something?
+          </h2>
+          <p className="mx-auto mt-4 max-w-md text-lg">
+            Ideas, questions, or just want to say hi. My inbox is open.
           </p>
-          <p className="mt-2 max-w-sm text-sm font-light leading-relaxed text-[#D7E2EA]/55">
-            Researcher and builder across AI/ML, health, and systems. Publications
-            and coursework are maintained on my MIT site.
-          </p>
-          <div className="mt-5 flex items-center gap-5">
-            <a
-              href={links.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="focus-ring rounded-full text-[#D7E2EA]/55 transition duration-200 hover:text-[#D7E2EA]"
-              aria-label="GitHub"
-            >
-              <Github className="h-5 w-5" aria-hidden="true" />
+          <div className="mt-7 flex flex-wrap justify-center gap-3">
+            <a href={links.email} className="btn bg-pink">
+              <Mail className="h-5 w-5" /> {links.emailPlain}
             </a>
-            <a
-              href={links.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="focus-ring rounded-full text-[#D7E2EA]/55 transition duration-200 hover:text-[#D7E2EA]"
-              aria-label="LinkedIn"
-            >
-              <Linkedin className="h-5 w-5" aria-hidden="true" />
+          </div>
+          <div className="mt-6 flex justify-center gap-3">
+            <a href={links.github} target="_blank" rel="noopener noreferrer" className="btn bg-white" aria-label="GitHub">
+              <Github className="h-5 w-5" />
             </a>
-            <a
-              href={links.email}
-              className="focus-ring rounded-full text-[#D7E2EA]/55 transition duration-200 hover:text-[#D7E2EA]"
-              aria-label="Email"
-            >
-              <Mail className="h-5 w-5" aria-hidden="true" />
+            <a href={links.linkedin} target="_blank" rel="noopener noreferrer" className="btn bg-white" aria-label="LinkedIn">
+              <Linkedin className="h-5 w-5" />
             </a>
           </div>
         </div>
+      </Pop>
 
-        <nav aria-label="Footer navigation">
-          <p className="text-xs font-medium uppercase tracking-[0.24em] text-[#D7E2EA]/45">
-            Elsewhere
-          </p>
-          <ul className="mt-4 grid gap-2.5">
-            {[
-              { label: "Publications", href: links.publications },
-              { label: "Courses", href: links.courses },
-              { label: "Blog", href: links.blog },
-              { label: "MIT site", href: links.mitSite },
-            ].map((item) => (
-              <li key={item.label}>
-                <a
-                  href={item.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="focus-ring rounded text-sm font-light text-[#D7E2EA]/65 transition duration-200 hover:text-[#D7E2EA]"
-                >
-                  {item.label} ↗
-                </a>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      </div>
-
-      <div className="mx-auto mt-10 max-w-5xl border-t border-[#D7E2EA]/10 pt-6">
-        <p className="text-xs font-light text-[#D7E2EA]/45">
-          &copy; {year} Sparsh Roy. All rights reserved.
-        </p>
-        <p className="mt-3 text-[0.7rem] font-light leading-relaxed text-[#D7E2EA]/35">
-          The content, design, and source code of this site are the intellectual
-          property of Sparsh Roy and are protected under copyright law. No part may
-          be reproduced, distributed, or reused without prior written permission.
-        </p>
-      </div>
+      <p className="mt-10 text-center font-hand text-xl text-ink/60">
+        made with too many snacks · © {new Date().getFullYear()} Sparsh Roy
+      </p>
     </footer>
   );
 }
