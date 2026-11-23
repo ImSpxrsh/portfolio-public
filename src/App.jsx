@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from 'react';
 import { Contact } from './components/Contact.jsx';
 import { Cursor } from './components/Cursor.jsx';
+import { FieldNotes } from './components/FieldNotes.jsx';
 import { Hedge } from './components/Hedge.jsx';
 import { Hero } from './components/Hero.jsx';
 import { Loader } from './components/Loader.jsx';
@@ -60,7 +61,8 @@ export function App() {
         <PixelEdge from="ink" to="orange" seed={8} />
         <Research />
         <Work />
-        <PixelEdge from="paper" to="ink" seed={13} />
+        <FieldNotes />
+        <PixelEdge from="orange" to="ink" seed={13} />
         <Trajectory />
       </main>
       <Contact />

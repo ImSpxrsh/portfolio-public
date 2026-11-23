@@ -185,7 +185,7 @@ export function Contact() {
 
   return (
     <footer className="contact" id="contact" data-theme="ink" ref={ref} aria-labelledby="contact-title">
-      <SectionHead title="contact" meta="nº 006 — research, products & collaboration" accent />
+      <SectionHead title="contact" meta="nº 007 — research, products & collaboration" accent />
 
       <h2 className="contact__title" id="contact-title">
         <span className="w"><span className="wi">let’s</span></span>{' '}
@@ -206,6 +206,7 @@ export function Contact() {
         <div>
           <span className="label label--dim">elsewhere</span>
           <ExtLink href={profile.links.linkedin}>linkedin <Arrow /></ExtLink>
+          <ExtLink href={profile.links.instagram}>instagram <Arrow /></ExtLink>
           <ExtLink href={profile.links.github}>github <Arrow /></ExtLink>
           <ExtLink href={profile.links.research}>research site <Arrow /></ExtLink>
         </div>

@@ -13,6 +13,7 @@ export const profile = {
   links: {
     linkedin: 'https://linkedin.com/in/roysparsh',
     github: 'https://github.com/ImSpxrsh',
+    instagram: 'https://www.instagram.com/sparshwyd/',
     research: 'https://sites.mit.edu/sparsh/',
     publications: 'https://sites.mit.edu/sparsh/publications/',
     blog: 'https://sites.mit.edu/sparsh/blog/',
@@ -28,6 +29,7 @@ export const nav = [
   { id: 'research-systems', label: 'systems' },
   { id: 'research', label: 'research' },
   { id: 'work', label: 'work' },
+  { id: 'field-notes', label: 'notes' },
   { id: 'trajectory', label: 'trajectory' },
   { id: 'contact', label: 'contact' },
 ];

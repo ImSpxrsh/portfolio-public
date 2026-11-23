@@ -77,7 +77,7 @@ export function Trajectory() {
 
   return (
     <section className="traj" id="trajectory" data-theme="ink" ref={ref} aria-labelledby="traj-title">
-      <SectionHead title="trajectory" meta="nº 005 — milestones, 2024 → now" accent />
+      <SectionHead title="trajectory" meta="nº 006 — milestones, 2024 → now" accent />
 
       <div className="traj__viewport">
         <div className="traj__track" ref={trackRef}>
