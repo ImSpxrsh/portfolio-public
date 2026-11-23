@@ -1,9 +1,9 @@
 import { useEffect, useLayoutEffect, useRef } from 'react';
 import { profile } from '../content.js';
 import { ScrollTrigger, fitCanvas, gsap, reducedMotion, rng, scrollToTarget } from '../lib/motion.js';
-import { Arrow, ExtLink } from './ui.jsx';
+import { Arrow } from './ui.jsx';
 
-const PORTRAIT_RATIO = 1;
+const PORTRAIT_RATIO = 0.84;
 const finePointer = () => window.matchMedia('(hover: hover) and (pointer: fine)').matches;
 const MOBILE = 760;
 
@@ -161,7 +161,7 @@ export function Hero({ ready }) {
         .fromTo(name, { autoAlpha: 1 }, { autoAlpha: 0, duration: 0.35 }, 0.55)
         .fromTo(portrait, rectVars(slotRect), { ...rectVars(finalRect), duration: 1, ease: 'power2.inOut' }, 0)
         .fromTo('.hero__img', { scale: 1.25 }, { scale: 1, duration: 1 }, 0)
-        .fromTo(portrait, { backgroundColor: '#ff571a' }, { backgroundColor: '#efeee9', duration: 0.5 }, 0.35)
+        .fromTo(portrait, { backgroundColor: '#ff571a' }, { backgroundColor: '#0b0b0b', duration: 0.5 }, 0.35)
         .fromTo(
           '.hero__caption',
           { autoAlpha: 0, y: 24 },
@@ -221,40 +221,46 @@ export function Hero({ ready }) {
         <figure className="hero__portrait" ref={portraitRef}>
           <img
             className="hero__img"
-            src="/avatar.png"
-            alt="Portrait of Sparsh Roy"
-            width="500"
-            height="500"
+            src="/photos/work-session.webp"
+            alt="Sparsh Roy working at a laptop alongside a teammate"
+            width="873"
+            height="591"
             fetchPriority="high"
           />
           <canvas className="hero__pixels" ref={pixelsRef} aria-hidden="true" />
         </figure>
 
         <div className="hero__captions" aria-hidden="true">
-          <span className="hero__caption label hero__caption--tl">fig. 01 — sparsh roy</span>
+          <span className="hero__caption label hero__caption--tl">sparsh roy · in the work</span>
           <span className="hero__caption label hero__caption--tr">{profile.location.toLowerCase()} · {profile.coordinates.toLowerCase()}</span>
           <p className="hero__claim">
             <span className="w"><span className="wi">researcher</span></span>{' '}
             <span className="w"><span className="wi">&amp;</span></span>{' '}
             <span className="w"><span className="wi">builder.</span></span>
           </p>
-          <span className="hero__caption label hero__caption--br">ai systems · health · biology · robotics</span>
+          <span className="hero__caption label hero__caption--br">questions · systems · evidence</span>
         </div>
 
         <div className="hero__meta">
           <div className="hero__now">
             <span className="hero__pixel" aria-hidden="true" />
             <div>
-              <span className="label label--dim">now working on</span>
-              <ExtLink href={profile.links.research} className="hero__nowlink">
-                research systems <Arrow />
-              </ExtLink>
+              <span className="label label--dim">research</span>
+              <a
+                href="#research"
+                className="hero__nowlink"
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToTarget('#research');
+                }}
+              >
+                selected papers
+              </a>
             </div>
           </div>
           <p className="hero__bio">
-            Researcher and builder from New Jersey, working across AI systems, health data,
-            computational biology and robotics. I turn hard questions into experiments, tools and
-            products.
+            I study how AI systems fail and how to test them, from models trained on clinical data
+            to multi-agent systems and robots.
           </p>
           <a
             className="hero__scroll label"

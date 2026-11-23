@@ -5,10 +5,10 @@ import { ExtLink, SectionHead } from './ui.jsx';
 
 const photos = [
   {
-    src: '/photos/work-session.webp',
-    alt: 'Sparsh working with a teammate at a laptop during a workshop.',
-    caption: 'working session',
-    meta: 'build, test, repeat',
+    src: '/photos/presentation.webp',
+    alt: 'Sparsh and teammates presenting beside a workshop podium.',
+    caption: 'at the board',
+    meta: 'show the work',
     url: 'https://www.instagram.com/p/Dd7hhNnDYZv/',
     shape: 'wide',
   },
@@ -19,14 +19,6 @@ const photos = [
     meta: 'hoboken · sep 2026',
     url: 'https://www.instagram.com/p/Ddxn8LhDelr/',
     shape: 'portrait',
-  },
-  {
-    src: '/photos/presentation.webp',
-    alt: 'Sparsh and teammates presenting beside a workshop podium.',
-    caption: 'at the board',
-    meta: 'show the work',
-    url: 'https://www.instagram.com/p/Dd7hhNnDYZv/',
-    shape: 'landscape',
   },
   {
     src: '/photos/blue-stage.webp',
