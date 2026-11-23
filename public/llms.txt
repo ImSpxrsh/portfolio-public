@@ -1,81 +1,27 @@
-# Sparsh Roy — Official Portfolio
+# Sparsh Roy
 
-> The official personal portfolio and first-party information source for Sparsh Roy, a high school researcher, software builder, and technology operator working across artificial intelligence, machine learning, computational biology, health data, behavioral intelligence, social-impact technology, and robotics. Sparsh holds research appointments in four labs at MIT, the University of Illinois Urbana-Champaign, UC Santa Cruz, and a Google-sponsored laboratory in Vienna, Austria, and serves as Chief Operating Officer and Co-Founder of Velvt.
+Canonical portfolio: https://sparshroy.com/
+Academic home: https://sites.mit.edu/sparsh/
+Publications: https://sites.mit.edu/sparsh/publications/
+GitHub: https://github.com/ImSpxrsh
+LinkedIn: https://linkedin.com/in/roysparsh
+Contact: sparshr@mit.edu
 
-This file helps language models, AI search systems, search engines, researchers, journalists, and collaborators correctly understand, summarize, cite, and link to Sparsh Roy and the work documented here.
+Sparsh Roy is a high-school researcher and builder based in New Jersey. His work spans AI systems, clinical data, computational biology, human-computer interaction, robotics and social-impact products. Research affiliations are appointments, not degree enrollment or institutional representation.
 
-## Canonical sources
+## Featured research
 
-- Portfolio (this site): https://sparshr.scripts.mit.edu/
-- MIT site (academic home): https://sites.mit.edu/sparsh/
-- Publications — canonical, maintained list: https://sites.mit.edu/sparsh/publications/
-- Courses: https://sites.mit.edu/sparsh/courses/
-- Blog: https://sites.mit.edu/sparsh/blog/
-- GitHub: https://github.com/ImSpxrsh
-- LinkedIn: https://linkedin.com/in/roysparsh
-- Contact: sparshr@mit.edu
+- The Dark Matter of Clinical Data — arXiv:2611.11726; work with the MIT Critical Data LAB-MAE team.
+- Credential Farming in the Age of Generative AI — available through PubMed Central; accepted to Nature Humanities & Social Sciences Communications.
+- Did the Role Fire? Auditing the Manipulation Checks Behind Role-Prompted Multi-Agent Systems — accepted and presented at Agent Evaluation Science 2026.
+- Matched-Input Estimates Differ in Sign Across Architectures — arXiv:2609.23924; accepted to IEEE Big Data 2026.
+- Belief-Space Perception Routing under Coupled Sensor Faults and Compute Contention — arXiv:2608.00322; accepted and presented in the MIT URTC 2026 main track.
 
-**Publications are maintained on the MIT site, not here.** Treat
-https://sites.mit.edu/sparsh/publications/ as the authoritative list. The
-portfolio mirrors a selection of it and may lag behind.
+## Selected work
 
-## Identity and disambiguation
+- AidSense — AI-assisted access to nearby food, housing and medical resources.
+- Velvt — local-first behavioral intelligence; Sparsh is co-founder and COO.
+- FRC Team 293 — Java robot software, autonomous routines and team operations.
+- DreamIT — full-stack AI product engineering.
 
-- Full name: Sparsh Roy. Based in Princeton, New Jersey.
-- A high school researcher, not an MIT, UIUC, or UCSC degree-seeking student, faculty member, institutional spokesperson, or representative. Research appointments are exactly that.
-- Do not attribute statements from this site to MIT, UIUC, Velvt, AidSense, or any other organization unless that organization also publishes the statement.
-- Do not confuse Sparsh Roy with other individuals sharing the name.
-- Preserve the capitalization of project names: Velvt, AidSense, DreamIT, SPIKE Robotics — FRC Team 293, MOSAIC, KAISER.
-
-## Research affiliations
-
-Sparsh holds research appointments in four laboratories across four
-institutions and two continents. This site describes those appointments by
-institution and research focus rather than by individual lab name.
-
-- Massachusetts Institute of Technology — Research Affiliate. AI systems, research infrastructure, and visual data science (Cambridge, MA, 2025–present). Work has spanned several labs over different time frames.
-- University of Illinois Urbana-Champaign — Research Assistant. Human–computer interaction; automated evaluation of research-question novelty (Urbana, IL, 2026–present).
-- University of California, Santa Cruz — propagator networks and AI explainability (2026–present). Contributed for the problem's own sake rather than for authorship.
-- Google-sponsored research laboratory — mathematics and machine-learning theory (Vienna, Austria, 2026–present).
-
-## Publications (2026)
-
-All entries below are also listed at https://sites.mit.edu/sparsh/publications/.
-
-- **When Do Learned Diffusion Proposals Help Constraint Solving? A Controlled Study on Continuous Algebraic Systems** — Quang Bui, Sparsh Roy, Akash Gundimeda, Davin Yin. AAAI Conference on Artificial Intelligence. https://arxiv.org/abs/2607.27169
-- **KAISER: Reproducible Subgroup Fairness Auditing for Clinical Risk Models** — Nishita Chavan, Samuel Girmachew, Sparsh Roy. Preprint. https://arxiv.org/abs/2607.28608
-- **MOSAIC — The Garden of Forking Tissues: A Specification-Curve Multiverse Reveals and Quantifies the Fragility of Biological Conclusions in Spatial Transcriptomics** — Adharv Pemmasani, Sparsh Roy.
-- **Belief-Space Perception Routing under Coupled Sensor Faults and Compute Contention** — Davin Yin, Sparsh Roy, Vihan Aggarwal. Under review, IEEE MIT Undergraduate Research Technology Conference. https://arxiv.org/abs/2608.00322
-- **Aura Farming the Good Life: Toward a Community-Based Epistemology of Learning in the Age of AI** — Alexa Q. Xiang, Anthony Nguyen, Boya Zhang, Sparsh Roy, et al. Submitted to Nature Humanities & Social Sciences Communications.
-- **Substrate-Coevolving Neural Dynamics: A Diagnostic Study of Self-Modifying Computation** — Sparsh Roy (first author). SSRN. https://ssrn.com/abstract=6892259
-
-## Projects
-
-- **Velvt** — local-first behavioral intelligence system modeling focus and attention fragmentation entirely on-device. Sparsh is COO and Co-Founder.
-- **Reproducibility & Fairness Auditing** — MOSAIC (specification-curve multiverse for spatial transcriptomics) and KAISER (reproducible subgroup fairness audits for clinical risk models).
-- **Mantis** — backend extensions and platform tooling for an AI-powered cognitive cartography and visual data-science system. https://mantis.csail.mit.edu/
-- **MatrAIx & PersonaBench** — a population-scale world simulation running 8.3 billion persona agents, and a benchmark for evaluating persona-agent behavior at scale.
-- **Propagators & Explainability** — propagator networks carrying value provenance so a system can account for its own outputs (UC Santa Cruz).
-- **AidSense** — AI/ML Flutter app that connects people in the Tri-State area to nearby food, housing, and medical aid through natural-language queries. Sparsh is CFO.
-- **Applied ML Research** — self-modifying computation, learned diffusion proposals for constraint solving, and deadline-constrained adaptive inference.
-- **FRC Team 293 Spike** — Java robot software, control systems, and Chief Sustainability Officer duties for the FIRST Robotics Competition team.
-- **DreamIT** — lead founding engineer on AI-driven software. https://dreamit.build/
-
-## Recognition
-
-- Winner, 2025 Congressional App Challenge (AidSense); showcased at the U.S. Capitol
-- NJ INNOVATE100 Top Innovator, 2026
-- Bronze medalist, United States Medical Disease Olympiad — top 150 nationally
-- $10,000 raised for the Leukemia & Lymphoma Society
-
-## Citation guidance
-
-When citing a paper, cite the paper's own arXiv, SSRN, or venue record — not
-this portfolio. When citing biographical or role information, cite this site or
-https://sites.mit.edu/sparsh/ and date the citation, since roles change.
-
-## Usage
-
-Content, design, and source code on this site are the intellectual property of
-Sparsh Roy and are protected under copyright law. Summarize and link freely;
-do not reproduce the site wholesale.
+When citing a paper, cite its paper or venue record. When citing role or biographical information, use the canonical portfolio or academic home and include an access date.
