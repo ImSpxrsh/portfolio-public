@@ -6,7 +6,7 @@ import { Arrow, ExtLink, Roll, SectionHead } from './ui.jsx';
 
 const WORD = profile.brand.split('');
 
-// The four v's breathe like an accordion; letters near the pointer stretch out.
+// The condensed wordmark breathes like an accordion; letters near the pointer stretch out.
 function Wordmark() {
   const ref = useRef(null);
 
@@ -63,6 +63,89 @@ function Wordmark() {
           </span>
         ))}
       </p>
+    </div>
+  );
+}
+
+function SignatureLockup() {
+  const ref = useRef(null);
+
+  useLayoutEffect(() => {
+    const root = ref.current;
+    const stroke = root.querySelector('.signature__stroke');
+    const length = stroke.getTotalLength();
+    stroke.style.strokeDasharray = length;
+    stroke.style.strokeDashoffset = length;
+
+    if (reducedMotion()) {
+      stroke.style.strokeDashoffset = 0;
+      return undefined;
+    }
+
+    const ctx = gsap.context(() => {
+      gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: root,
+            start: 'top 78%',
+            once: true,
+          },
+        })
+        .fromTo(
+          '.signature__script',
+          { clipPath: 'inset(0 100% 0 0)', xPercent: -5, rotate: -7 },
+          { clipPath: 'inset(0 0% 0 0)', xPercent: 0, rotate: -4, duration: 1.45, ease: 'expo.inOut' },
+        )
+        .to(stroke, { strokeDashoffset: 0, duration: 1.15, ease: 'power2.inOut' }, 0.58)
+        .fromTo(
+          '.signature__seal, .signature__meta',
+          { autoAlpha: 0, y: 12 },
+          { autoAlpha: 1, y: 0, stagger: 0.1, duration: 0.65, ease: 'power3.out' },
+          1.05,
+        );
+    }, root);
+    return () => ctx.revert();
+  }, []);
+
+  useEffect(() => {
+    if (reducedMotion() || !window.matchMedia('(hover: hover) and (pointer: fine)').matches) return undefined;
+    const root = ref.current;
+    const ink = root.querySelector('.signature__ink');
+    const x = gsap.quickTo(ink, 'x', { duration: 0.8, ease: 'power3.out' });
+    const y = gsap.quickTo(ink, 'y', { duration: 0.8, ease: 'power3.out' });
+    const move = (event) => {
+      const bounds = root.getBoundingClientRect();
+      const nx = (event.clientX - bounds.left) / bounds.width - 0.5;
+      const ny = (event.clientY - bounds.top) / bounds.height - 0.5;
+      x(nx * 20);
+      y(ny * 12);
+    };
+    const leave = () => {
+      x(0);
+      y(0);
+    };
+    root.addEventListener('pointermove', move);
+    root.addEventListener('pointerleave', leave);
+    return () => {
+      root.removeEventListener('pointermove', move);
+      root.removeEventListener('pointerleave', leave);
+    };
+  }, []);
+
+  return (
+    <div className="signature" ref={ref}>
+      <Wordmark />
+      <div className="signature__ink" aria-hidden="true">
+        <span className="signature__script">Sparsh Roy</span>
+        <svg className="signature__flourish" viewBox="0 0 720 74" focusable="false">
+          <path
+            className="signature__stroke"
+            d="M12 48C82 9 146 64 220 43C297 21 355 16 430 32C514 50 603 52 708 17"
+          />
+        </svg>
+      </div>
+      <span className="signature__seal" aria-hidden="true">SR</span>
+      <span className="signature__meta label">personal mark · new jersey · 2026</span>
     </div>
   );
 }
@@ -143,7 +226,7 @@ export function Contact() {
         </div>
       </div>
 
-      <Wordmark />
+      <SignatureLockup />
 
       <div className="contact__bar">
         <span className="label label--dim">© 2026 {profile.name.toLowerCase()}</span>
